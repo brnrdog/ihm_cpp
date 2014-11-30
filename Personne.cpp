@@ -2,6 +2,13 @@
 #include "Personne.h"
 
 //--
+Personne::Personne(char* nom, char* prenom, int annee) {
+  _nom = nom;
+  _prenom = prenom;
+  _anneeNaissance = annee;
+}
+
+//--
 Personne::Personne( /* ### */ )
 {
 }
@@ -55,6 +62,12 @@ void Personne::display(ostream& os) const
 
  // ### : Affichage des attributs de la classe Personne
  // Exemple : os << _at;
+ os << _nom;
+ os << "\n";
+ os << _prenom;
+ os << "\n";
+ os << _anneeNaissance;
+ os << "\n\n";
 }
 
 //--
@@ -83,3 +96,26 @@ void Personne::_destroy(void)
  // Exemple : delete _at;
 }
 
+void Personne::setNom(char* nom) {
+  _nom = nom;
+}
+
+void Personne::setPrenom(char* prenom) {
+  _prenom = prenom;
+}
+
+void Personne::setAnneeNaissance(int annee) {
+  _anneeNaissance = annee;
+}
+
+char* Personne::getNom() {
+  return _nom;
+}
+
+char* Personne::getPrenom() {
+  return _prenom;
+}
+
+int Personne::getAnneeNaissance() {
+  return _anneeNaissance;
+}

@@ -17,6 +17,7 @@ class Personne
             Personne( /* ### */ );
             Personne(const Personne& aP);
             Personne& operator=(const Personne& aP);
+            Personne(char* nom, char* prenom, int annee);
    virtual ~Personne(void);
 
    // Comparaisons
@@ -25,6 +26,13 @@ class Personne
    friend  bool operator!=(const Personne& aP1, const Personne& aP2);
 
    // Inspecteurs/modificateurs
+   void setNom(char* nom);
+   void setPrenom(char* prenom);
+   void setAnneeNaissance(int annee);
+
+   char* getNom();
+   char* getPrenom();
+   int getAnneeNaissance();
 
  protected :
 
@@ -53,8 +61,9 @@ class Personne
    void _destroy(void);
 
    // Attributes
-   char* nom, prenom;
-   int anneNaissance;
+   char* _nom;
+   char* _prenom;
+   int _anneeNaissance;
 };
 
 #endif // _PERSONNE_H_
