@@ -24,6 +24,8 @@ class Personne
 
    friend  bool operator==(const Personne& aP1, const Personne& aP2);
    friend  bool operator!=(const Personne& aP1, const Personne& aP2);
+   friend  bool operator>(Personne& aP1, Personne& aP2);
+   friend  bool operator<(Personne& aP1, Personne& aP2);
 
    // Inspecteurs/modificateurs
    void setNom(char* nom);

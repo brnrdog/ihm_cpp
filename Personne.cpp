@@ -48,6 +48,15 @@ bool operator!=(const Personne& aP1, const Personne& aP2)
  return !(aP1==aP2);
 }
 
+bool operator<(Personne& p1, Personne& p2) {
+  if(strcmp(p1.getNom(), p2.getNom()) < 0)
+  {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 //--
 ostream& operator<<(ostream& os, const Personne& aP)
 {

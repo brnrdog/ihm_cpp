@@ -14,7 +14,7 @@ int main(){
 
   cout << p;
 
-  cout << "-- SETTERS";
+  cout << "\n-- SETTERS\n";
 
   p.setAnneeNaissance(2000);
 
@@ -28,7 +28,7 @@ int main(){
 
   cout << p;
 
-  cout << "-- GETTERS\n";
+  cout << "\n-- GETTERS\n";
 
   cout << p.getNom();
   cout << "\n";
@@ -39,7 +39,26 @@ int main(){
   cout << p.getAnneeNaissance();
   cout << "\n";
 
-  cout << "-- COMPARATIONS";
+  cout << "\n-- COMPARATIONS\n";
 
-  cout << "Finished.\n";
+  Personne p1("ARMSTRONG", "dsa", 1990);
+  Personne p2("BORNWOOD", "dsa", 1990);
+
+  if(p1 < p2)
+  {
+    cout << "ARMSTRONG est inférieur à BORNWOOD\n";
+  } else {
+    cout << "ARMSTRONG est supérieur à BORNWOOD\n";
+  }
+
+  Personne p3("CARLSTRONG", "dsa", 1990);
+
+  if(p3 < p2)
+  {
+    cout << "CARLSTRONG est inférieur à BORNWOOD\n";
+  } else {
+    cout << "CARLSTRONG est supérieur à BORNWOOD\n";
+  }
+
+  cout << "\nFinished.\n";
 }
