@@ -28,6 +28,13 @@ class Enseignant : public Personne
    friend  bool operator!=(const Enseignant& anE1, const Enseignant& anE2);
 
    // Inspecteurs/modificateurs
+   void setCM(int cm);
+   void setTD(int td);
+
+   int getCM();
+   int getTD();
+
+   int getETD();
 
  protected :
 

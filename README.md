@@ -17,4 +17,4 @@ Interface Homme Machine - C++
 - [x] Constructors
 - [ ] Display Method
 - [ ] Equality Operator
-- [ ] Getters and setters
+- [x] Getters and setters

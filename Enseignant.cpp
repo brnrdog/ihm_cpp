@@ -94,3 +94,28 @@ void Enseignant::_destroy(void)
  // ### : Destruction des attributs de la classe Enseignant
  // Exemple : delete _at;
 }
+
+void Enseignant::setCM(int cm)
+{
+  _cm = cm;
+}
+
+void Enseignant::setTD(int td)
+{
+  _td = td;
+}
+
+int Enseignant::getCM()
+{
+  return _cm;
+}
+
+int Enseignant::getTD()
+{
+  return _td;
+}
+
+int Enseignant::getETD()
+{
+  return (_cm*1.5 + _td);
+}
