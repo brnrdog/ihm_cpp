@@ -4,6 +4,7 @@ Interface Homme Machine - C++
 #### 1.0 Personne
 - [x] Constructors
 - [x] Display Method
+- [ ] Reading Method
 - [x] Comparison Method
 - [x] Getters and setters
 
