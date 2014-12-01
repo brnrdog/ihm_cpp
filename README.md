@@ -15,6 +15,6 @@ Interface Homme Machine - C++
 
 #### 1.1 Enseignant
 - [x] Constructors
-- [ ] Display Method
+- [x] Display Method
 - [ ] Equality Operator
 - [x] Getters and setters

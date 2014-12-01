@@ -65,6 +65,8 @@ void Enseignant::display(ostream& os) const
 
  // ### : Affichage des attributs de la classe Enseignant
  // Exemple : os << _at;
+ os << (_cm*1.5 + _td);
+ os << "\n";
 }
 
 //--
