@@ -1,4 +1,4 @@
-all: genere personne.o main.o personne
+all: genere personne.o etudiant.o main.o main
 
 CCFLAGS=-pedantic -W -Wall -Werror
 
@@ -16,5 +16,8 @@ main.o: main.cpp personne.h
 personne.o: Personne.cpp Personne.h
 	g++ -c personne.cpp
 
-personne: main.cpp personne.o
-	g++ main.o personne.o -o personne
+main: main.cpp personne.o etudiant.o
+	g++ main.o personne.o etudiant.o -o main
+
+etudiant.o: Etudiant.h Etudiant.cpp Personne.h
+	g++ -c etudiant.cpp
