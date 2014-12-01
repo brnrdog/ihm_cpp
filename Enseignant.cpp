@@ -13,6 +13,13 @@ Enseignant::Enseignant(const Enseignant& anE) : Personne(anE)
 }
 
 //--
+Enseignant::Enseignant(char* nom, char* prenom, int annee, int cm, int td) : Personne(nom, prenom, annee)
+{
+  _cm = cm;
+  _td = td;
+}
+
+//--
 Enseignant& Enseignant::operator=(const Enseignant& anE)
 {
  if (this != &anE)
@@ -87,4 +94,3 @@ void Enseignant::_destroy(void)
  // ### : Destruction des attributs de la classe Enseignant
  // Exemple : delete _at;
 }
-

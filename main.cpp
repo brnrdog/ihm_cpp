@@ -1,5 +1,6 @@
 #include "Personne.h"
 #include "Etudiant.h"
+#include "Enseignant.h"
 using namespace std;
 
 /*
@@ -67,6 +68,11 @@ int main(){
 
   cout << e;
 
+  cout << "\n-- ENSEIGNANT\n";
+
+  Enseignant ens("OAK", "GARY", 1975, 30, 50);
+
+  cout << ens;
 
   cout << "\nFinished.\n";
 }
