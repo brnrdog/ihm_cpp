@@ -65,6 +65,8 @@ void Etudiant::display(ostream& os) const
 
  // ### : Affichage des attributs de la classe Etudiant
  // Exemple : os << _at;
+ os << (_note1+_note2)/2.0;
+ os << "\n";
 }
 
 //--
@@ -93,4 +95,28 @@ void Etudiant::_destroy(void)
 {
  // ### : Destruction des attributs de la classe Etudiant
  // Exemple : delete _at;
+}
+
+void Etudiant::setNote1(float n1)
+{
+  _note1 = n1;
+}
+
+void Etudiant::setNote2(float n2)
+{
+  _note2 = n2;
+}
+
+float Etudiant::getNote1()
+{
+  return _note1;
+}
+
+float Etudiant::getNote2()
+{
+  return _note2;
+}
+
+float Etudiant::moyenne(){
+  return (_note1+_note2)/2.0;
 }

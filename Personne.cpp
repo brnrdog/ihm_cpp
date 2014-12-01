@@ -76,7 +76,7 @@ void Personne::display(ostream& os) const
  os << _prenom;
  os << "\n";
  os << _anneeNaissance;
- os << "\n\n";
+ os << "\n";
 }
 
 //--

@@ -65,6 +65,8 @@ int main(){
 
   Etudiant e("GURGEL", "Bernardo", 1990, 70.0, 80.0);
 
+  cout << e;
+
 
   cout << "\nFinished.\n";
 }

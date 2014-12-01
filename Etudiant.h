@@ -57,7 +57,8 @@ class Etudiant : public Personne
  private :
 
   // Attributes
-  float _note1, _note2;
+  float _note1;
+  float _note2;
 
    // Methodes privees d'allocation/desallocation
 
