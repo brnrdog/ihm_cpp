@@ -86,7 +86,14 @@ bool Personne::isEqualTo(const Personne& aP) const
 
  // ### : Test des attributs de la classe Personne
  // Exemple : if (_at != aP._at) return false;
- return true;
+ if((_nom == aP._nom) && (_prenom == aP._prenom))
+ {
+   return true;
+ }
+ else
+ {
+   return false;
+ }
 }
 
 //--

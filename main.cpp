@@ -58,7 +58,7 @@ int main(){
   if(p3 < p2)
   {
     cout << "CARLSTRONG est inférieur à BORNWOOD\n";
-  } else {
+    } else {
     cout << "CARLSTRONG est supérieur à BORNWOOD\n";
   }
 
@@ -73,6 +73,22 @@ int main(){
   Enseignant ens("OAK", "GARY", 1975, 30, 50);
 
   cout << ens;
+
+  Enseignant ens2("OAK", "GART", 1975, 30, 50);
+
+  if(ens == ens2)
+  {
+    cout << "ens est égal à ens2. \n";
+  } else {
+    cout << "ens est égal à ens2. \n";
+  }
+
+  if(ens == p3)
+  {
+    cout << "ens est égal à p3.\n";
+  } else {
+    cout << "ens est different de p3.\n";
+  }
 
   cout << "\nFinished.\n";
 }
