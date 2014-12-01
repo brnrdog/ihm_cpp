@@ -13,6 +13,13 @@ Etudiant::Etudiant(const Etudiant& anE) : Personne(anE)
 }
 
 //--
+Etudiant::Etudiant(char* nom, char* prenom, int annee, float n1, float n2) : Personne(nom, prenom, annee)
+{
+  _note1 = n1;
+  _note2 = n2;
+}
+
+//--
 Etudiant& Etudiant::operator=(const Etudiant& anE)
 {
  if (this != &anE)
@@ -87,4 +94,3 @@ void Etudiant::_destroy(void)
  // ### : Destruction des attributs de la classe Etudiant
  // Exemple : delete _at;
 }
-

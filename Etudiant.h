@@ -15,11 +15,11 @@ class Etudiant : public Personne
  public :
 
    // Allocateurs/Desallocateurs
-
             Etudiant( /* ### */ );
             Etudiant(const Etudiant& anE);
             Etudiant& operator=(const Etudiant& anE);
    virtual ~Etudiant(void);
+   Etudiant(char* nom, char* prenom, int annee, float n1, float n2);
 
    // Comparaisons
 
@@ -27,6 +27,13 @@ class Etudiant : public Personne
    friend  bool operator!=(const Etudiant& anE1, const Etudiant& anE2);
 
    // Inspecteurs/modificateurs
+   void setNote1(float n1);
+   void setNote2(float n2);
+
+   float getNote1();
+   float getNote2();
+
+   float moyenne();
 
  protected :
 
@@ -48,6 +55,9 @@ class Etudiant : public Personne
              // ###
 
  private :
+
+  // Attributes
+  float _note1, _note2;
 
    // Methodes privees d'allocation/desallocation
 

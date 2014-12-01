@@ -1,4 +1,5 @@
 #include "Personne.h"
+#include "Etudiant.h"
 using namespace std;
 
 /*
@@ -59,6 +60,11 @@ int main(){
   } else {
     cout << "CARLSTRONG est supérieur à BORNWOOD\n";
   }
+
+  cout << "\n-- ÉTUDIANT\n";
+
+  Etudiant e("GURGEL", "Bernardo", 1990, 70.0, 80.0);
+
 
   cout << "\nFinished.\n";
 }
