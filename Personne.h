@@ -9,6 +9,7 @@ using namespace std;
 class Personne
 {
    friend ostream& operator<<(ostream& os, const Personne& aP);
+   friend istream& operator>>(istream& is, Personne& aP);
 
  public :
 

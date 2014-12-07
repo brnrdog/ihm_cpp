@@ -65,6 +65,18 @@ ostream& operator<<(ostream& os, const Personne& aP)
 }
 
 //--
+istream& operator>>(istream& is, Personne& aP)
+{
+  char* nom;
+  char* prenom;
+  int anneeNaissance;
+  is >> nom;
+  is >> prenom;
+  is >> anneeNaissance;
+  return is;
+}
+
+//--
 void Personne::display(ostream& os) const
 {
  (void)os; // Pour eviter un warning si pas utilise
