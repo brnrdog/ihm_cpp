@@ -20,12 +20,15 @@ class TabPersonne
             TabPersonne& operator=(const TabPersonne& aT);
    virtual ~TabPersonne(void);
 
+   TabPersonne(Personne *tab[]);
+
    // Comparaisons
 
    friend  bool operator==(const TabPersonne& aT1, const TabPersonne& aT2);
    friend  bool operator!=(const TabPersonne& aT1, const TabPersonne& aT2);
 
    // Inspecteurs/modificateurs
+   void ajouterPersonne(Personne *p);
 
  protected :
 
@@ -49,7 +52,7 @@ class TabPersonne
  private :
 
   // Attributes
-  Personne*  tab[20];
+  Personne *_tab[20];
 
    // Methodes privees d'allocation/desallocation
 

@@ -1,6 +1,7 @@
 #include "Personne.h"
 #include "Etudiant.h"
 #include "Enseignant.h"
+#include "TabPersonne.h"
 using namespace std;
 
 /*
@@ -89,6 +90,16 @@ int main(){
   } else {
     cout << "ens est different de p3.\n";
   }
+
+  cout << "\n-- TAB\n";
+
+  TabPersonne tab;
+
+  tab.ajouterPersonne(&ens);
+  tab.ajouterPersonne(&e);
+  tab.ajouterPersonne(&p1);
+  tab.ajouterPersonne(&p2);
+  cout << tab;
 
   cout << "\nFinished.\n";
 }

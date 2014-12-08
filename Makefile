@@ -17,7 +17,7 @@ personne.o: Personne.cpp Personne.h
 	g++ -c personne.cpp
 
 main: main.cpp personne.o etudiant.o enseignant.o tabPersonne.o
-	g++ main.o personne.o etudiant.o enseignant.o -o main
+	g++ main.o personne.o etudiant.o enseignant.o tabPersonne.o -o main
 
 etudiant.o: Etudiant.h Etudiant.cpp Personne.h
 	g++ -c etudiant.cpp

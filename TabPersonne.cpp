@@ -55,6 +55,15 @@ void TabPersonne::display(ostream& os) const
 
  // ### : Affichage des attributs de la classe TabPersonne
  // Exemple : os << _at;
+ for (Personne *p : _tab)
+ {
+   if (p != nullptr) {
+     os << p->getNom();
+     os << " ";
+     os << p->getPrenom();
+     os << "\n";
+   }
+ }
 }
 
 //--
@@ -83,3 +92,14 @@ void TabPersonne::_destroy(void)
  // Exemple : delete _at;
 }
 
+void TabPersonne::ajouterPersonne(Personne *p)
+{
+  for(int i = 0; i < sizeof(_tab); i++)
+  {
+    if(_tab[i] == nullptr)
+    {
+      _tab[i] = p;
+      break;
+    }
+  }
+}
