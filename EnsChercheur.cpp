@@ -15,6 +15,13 @@ EnsChercheur::EnsChercheur(const EnsChercheur& anE) : Enseignant(anE),
 }
 
 //--
+EnsChercheur::EnsChercheur(char* nom, char* prenom, int annee, string domaine, int cm, int td) : Chercheur(nom, prenom, annee, domaine)
+{
+  this->setCM(cm);
+  this->setTD(td);
+}
+
+//--
 EnsChercheur& EnsChercheur::operator=(const EnsChercheur& anE)
 {
  if (this != &anE)
@@ -92,4 +99,3 @@ void EnsChercheur::_destroy(void)
  // ### : Destruction des attributs de la classe EnsChercheur
  // Exemple : delete _at;
 }
-

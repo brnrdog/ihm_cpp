@@ -8,7 +8,7 @@
 
 using namespace std;
 
-class Enseignant : public Personne
+class Enseignant : virtual public Personne
 {
    friend ostream& operator<<(ostream& os, const Enseignant& anE);
 

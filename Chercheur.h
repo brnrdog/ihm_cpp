@@ -9,7 +9,7 @@
 
 using namespace std;
 
-class Chercheur : public Personne
+class Chercheur : virtual public Personne
 {
    friend ostream& operator<<(ostream& os, const Chercheur& aC);
 

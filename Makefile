@@ -1,4 +1,4 @@
-all: genere personne.o etudiant.o enseignant.o tabPersonne.o chercheur.o main.o main
+all: genere personne.o etudiant.o enseignant.o tabPersonne.o chercheur.o ensChercheur.o main.o main
 
 CCFLAGS=-pedantic -W -Wall -Werror
 
@@ -16,8 +16,8 @@ main.o: main.cpp personne.h
 personne.o: Personne.cpp Personne.h
 	g++ -c personne.cpp
 
-main: main.cpp personne.o etudiant.o enseignant.o tabPersonne.o chercheur.o
-	g++ main.o personne.o etudiant.o enseignant.o tabPersonne.o chercheur.o -o main
+main: main.cpp personne.o etudiant.o enseignant.o tabPersonne.o chercheur.o ensChercheur.o
+	g++ main.o personne.o etudiant.o enseignant.o tabPersonne.o chercheur.o ensChercheur.o -o main
 
 etudiant.o: Etudiant.h Etudiant.cpp Personne.h
 	g++ -c etudiant.cpp
@@ -30,3 +30,6 @@ tabPersonne.o: TabPersonne.h TabPersonne.cpp Personne.h
 
 chercheur.o: Chercheur.h Chercheur.cpp Personne.h
 	g++ -c chercheur.cpp
+
+ensChercheur.o: EnsChercheur.h EnsChercheur.cpp Chercheur.h Enseignant.h Personne.h
+	g++ -c ensChercheur.cpp

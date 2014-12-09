@@ -3,6 +3,7 @@
 #define _ENSCHERCHEUR_H_
 
 #include <iostream>
+#include <string>
 
 #include "Enseignant.h"
 #include "Chercheur.h"
@@ -22,6 +23,7 @@ class EnsChercheur : public Enseignant,
             EnsChercheur(const EnsChercheur& anE);
             EnsChercheur& operator=(const EnsChercheur& anE);
    virtual ~EnsChercheur(void);
+   EnsChercheur(char* nom, char* prenom, int annee, string domaine, int cm, int td);
 
    // Comparaisons
 

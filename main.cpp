@@ -3,6 +3,7 @@
 #include "Enseignant.h"
 #include "TabPersonne.h"
 #include "Chercheur.h"
+#include "EnsChercheur.h"
 using namespace std;
 
 /*
@@ -106,6 +107,15 @@ int main(){
 
   Chercheur c1("ENGELBART", "Douglas", 1925, "IHC");
   cout << c1;
+
+  cout << "\n-- MORE TAB\n";
+  tab.ajouterPersonne(&c1);
+
+  EnsChercheur ec1("EINSTEIN", "Albert", 1879, "Physycs", 60, 30);
+  tab.ajouterPersonne(&ec1);
+
+  cout << tab;
+
 
 
   cout << "\nFinished.\n";
