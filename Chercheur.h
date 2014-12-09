@@ -3,6 +3,7 @@
 #define _CHERCHEUR_H_
 
 #include <iostream>
+#include <string>
 
 #include "Personne.h"
 
@@ -21,12 +22,16 @@ class Chercheur : public Personne
             Chercheur& operator=(const Chercheur& aC);
    virtual ~Chercheur(void);
 
+   Chercheur(char *prenom, char *nom, int annee, string domaine);
+
    // Comparaisons
 
    friend  bool operator==(const Chercheur& aC1, const Chercheur& aC2);
    friend  bool operator!=(const Chercheur& aC1, const Chercheur& aC2);
 
    // Inspecteurs/modificateurs
+   string getDomaine();
+   void setDomaine(string domaine);
 
  protected :
 
@@ -48,6 +53,9 @@ class Chercheur : public Personne
              // ###
 
  private :
+
+  // Attributes
+  string _domaine;
 
    // Methodes privees d'allocation/desallocation
 

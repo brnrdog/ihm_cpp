@@ -2,6 +2,7 @@
 #include "Etudiant.h"
 #include "Enseignant.h"
 #include "TabPersonne.h"
+#include "Chercheur.h"
 using namespace std;
 
 /*
@@ -100,6 +101,12 @@ int main(){
   tab.ajouterPersonne(&p1);
   tab.ajouterPersonne(&p2);
   cout << tab;
+
+  cout << "\n-- CHERCHEUR\n";
+
+  Chercheur c1("ENGELBART", "Douglas", 1925, "IHC");
+  cout << c1;
+
 
   cout << "\nFinished.\n";
 }

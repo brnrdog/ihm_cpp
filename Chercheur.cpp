@@ -12,6 +12,11 @@ Chercheur::Chercheur(const Chercheur& aC) : Personne(aC)
  _copy(aC);
 }
 
+Chercheur::Chercheur(char *prenom, char *nom, int annee, string domaine) : Personne(nom, prenom, annee)
+{
+  _domaine = domaine;
+}
+
 //--
 Chercheur& Chercheur::operator=(const Chercheur& aC)
 {
@@ -55,6 +60,8 @@ void Chercheur::display(ostream& os) const
  (void)os; // Pour eviter un warning si pas utilise
 
  Personne::display(os);
+ os << _domaine;
+ os << "\n";
 
  // ### : Affichage des attributs de la classe Chercheur
  // Exemple : os << _at;
@@ -88,3 +95,12 @@ void Chercheur::_destroy(void)
  // Exemple : delete _at;
 }
 
+void Chercheur::setDomaine(string domaine)
+{
+  _domaine = domaine;
+}
+
+string Chercheur::getDomaine()
+{
+  return _domaine;
+}
