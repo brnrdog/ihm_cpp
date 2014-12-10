@@ -21,6 +21,7 @@ class Enseignant : virtual public Personne
             Enseignant& operator=(const Enseignant& anE);
    virtual ~Enseignant(void);
    Enseignant(char* nom, char* prenom, int annee, int cm, int td);
+   Enseignant(int cm, int td);
 
    // Comparaisons
 
@@ -56,8 +57,8 @@ class Enseignant : virtual public Personne
              // ###
 
  private :
-  int _cm, _td;
    // Methodes privees d'allocation/desallocation
+   int _cm, _td;
 
    void _copy(const Enseignant& anE);
    void _destroy(void);

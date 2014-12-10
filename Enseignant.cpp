@@ -19,6 +19,12 @@ Enseignant::Enseignant(char* nom, char* prenom, int annee, int cm, int td) : Per
   _td = td;
 }
 
+Enseignant::Enseignant(int cm, int td)
+{
+  _cm = cm;
+  _td = td;
+}
+
 //--
 Enseignant& Enseignant::operator=(const Enseignant& anE)
 {

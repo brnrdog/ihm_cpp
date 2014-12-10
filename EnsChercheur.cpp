@@ -15,10 +15,14 @@ EnsChercheur::EnsChercheur(const EnsChercheur& anE) : Enseignant(anE),
 }
 
 //--
-EnsChercheur::EnsChercheur(char* nom, char* prenom, int annee, string domaine, int cm, int td) : Chercheur(nom, prenom, annee, domaine)
+EnsChercheur::EnsChercheur(char* nom, char* prenom, int annee, string domaine, int cm, int td)
 {
-  this->setCM(cm);
+  this->setNom(nom);
+  this->setPrenom(prenom);
+  this->setAnneeNaissance(annee);
+  this->setDomaine(domaine);
   this->setTD(td);
+  this->setCM(cm);
 }
 
 //--

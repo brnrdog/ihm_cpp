@@ -114,6 +114,8 @@ int main(){
   EnsChercheur ec1("EINSTEIN", "Albert", 1879, "Physycs", 60, 30);
   tab.ajouterPersonne(&ec1);
 
+  // cout << ec1;
+
   cout << tab;
 
 
