@@ -111,7 +111,7 @@ int main(){
   cout << "\n-- MORE TAB\n";
   tab.ajouterPersonne(&c1);
 
-  EnsChercheur ec1("EINSTEIN", "Albert", 1879, "Physycs", 60, 30);
+  EnsChercheur ec1("EINSTEIN", "Albert", 1879, "Physics", 60, 30);
   tab.ajouterPersonne(&ec1);
 
   // cout << ec1;
