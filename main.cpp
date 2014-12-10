@@ -116,15 +116,17 @@ int main(){
 
   // cout << ec1;
 
+  tab.trier();
+
   cout << tab;
 
-  cout << endl << "-- LECTURE" << endl;
+  // cout << endl << "-- LECTURE" << endl;
 
-  Personne inputPersonne;
+  // Personne inputPersonne;
 
-  cin >> inputPersonne;
+  // cin >> inputPersonne;
 
-  cout << inputPersonne;
+  // cout << inputPersonne;
 
   cout << "\nFinished.\n";
 }

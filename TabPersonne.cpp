@@ -60,15 +60,6 @@ void TabPersonne::display(ostream& os) const
  {
    os << *(_tab[i]) << endl;
  }
- // for (Personne *p : _tab)
- // {
- //   if (p != nullptr) {
- //     os << p->getNom();
- //     os << " ";
- //     os << p->getPrenom();
- //     os << "\n";
- //   }
- // }
 }
 
 //--
@@ -101,12 +92,27 @@ void TabPersonne::ajouterPersonne(Personne *p)
 {
   _tab[_N] = p;
   _N++;
-  // for(int i = 0; i < sizeof(_tab); i++)
-  // {
-  //   if(_tab[i] == nullptr)
-  //   {
-  //     _tab[i] = p;
-  //     break;
-  //   }
-  // }
+}
+
+void TabPersonne::trier()
+{
+  int i, fin;
+  Personne *tmp;
+  bool echange;
+  fin = _N -1;
+  do
+  {
+    echange = false;
+    for (int i = 0; i < fin; ++i)
+    {
+      if (!(*_tab[i] < *_tab[i+1]))
+      {
+        tmp = _tab[i];
+        _tab[i] = _tab[i+1];
+        _tab[i+1] = tmp;
+        echange = true;
+      }
+    }
+    fin--;
+  } while (echange);
 }
