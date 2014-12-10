@@ -94,7 +94,7 @@ void TabPersonne::ajouterPersonne(Personne *p)
   _N++;
 }
 
-void TabPersonne::trier()
+void TabPersonne::sorter()
 {
   int i, fin;
   Personne *tmp;

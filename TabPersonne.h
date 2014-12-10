@@ -29,7 +29,7 @@ class TabPersonne
 
    // Inspecteurs/modificateurs
    void ajouterPersonne(Personne *p);
-   void trier();
+   void sorter();
 
  protected :
 

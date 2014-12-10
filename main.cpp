@@ -101,14 +101,14 @@ int main(){
   tab.ajouterPersonne(&e);
   tab.ajouterPersonne(&p1);
   tab.ajouterPersonne(&p2);
-  cout << tab;
+  cout << tab << endl;
 
   cout << "\n-- CHERCHEUR\n";
 
   Chercheur c1("ENGELBART", "Douglas", 1925, "IHC");
-  cout << c1;
+  cout << c1 << endl;
 
-  cout << "\n-- MORE TAB\n";
+  cout << "\n-- ORDERED TAB" << endl;
   tab.ajouterPersonne(&c1);
 
   EnsChercheur ec1("EINSTEIN", "Albert", 1879, "Physics", 60, 30);
@@ -116,7 +116,7 @@ int main(){
 
   // cout << ec1;
 
-  tab.trier();
+  tab.sorter();
 
   cout << tab;
 
