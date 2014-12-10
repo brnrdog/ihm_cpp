@@ -33,6 +33,8 @@ class Personne
    void setPrenom(char* prenom);
    void setAnneeNaissance(int annee);
 
+   void input(istream& is);
+
    char* getNom();
    char* getPrenom();
    int getAnneeNaissance();

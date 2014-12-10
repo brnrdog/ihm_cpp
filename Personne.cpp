@@ -67,13 +67,25 @@ ostream& operator<<(ostream& os, const Personne& aP)
 //--
 istream& operator>>(istream& is, Personne& aP)
 {
-  char* nom;
-  char* prenom;
-  int anneeNaissance;
-  is >> nom;
-  is >> prenom;
-  is >> anneeNaissance;
+  aP.input(is);
   return is;
+}
+
+void Personne::input(istream& is)
+{
+  char ch[20];
+  cout << "Please, enter the name:" << endl;
+  is >> ch;
+  if (_prenom != NULL) delete _prenom;
+  _prenom = new char[strlen(ch)+1];
+  strcpy(_prenom, ch);
+  cout << "Please, enter the lastname:" << endl;
+  is >> ch;
+  if (_nom != NULL) delete _nom;
+  _nom = new char[strlen(ch)+1];
+  strcpy(_nom, ch);
+  cout << "Please, enter the birthday:" << endl;
+  is >> _anneeNaissance;
 }
 
 //--

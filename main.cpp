@@ -118,7 +118,13 @@ int main(){
 
   cout << tab;
 
+  cout << endl << "-- LECTURE" << endl;
 
+  Personne inputPersonne;
+
+  cin >> inputPersonne;
+
+  cout << inputPersonne;
 
   cout << "\nFinished.\n";
 }
