@@ -33,7 +33,7 @@ class Etudiant : public Personne
    float getNote1();
    float getNote2();
 
-   float moyenne();
+   float moyenne() const;
 
  protected :
 

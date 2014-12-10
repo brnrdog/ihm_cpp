@@ -65,8 +65,7 @@ void Etudiant::display(ostream& os) const
 
  // ### : Affichage des attributs de la classe Etudiant
  // Exemple : os << _at;
- os << (_note1+_note2)/2.0;
- os << "\n";
+ os << "MOYENNE: " << this->moyenne() << endl;
 }
 
 //--
@@ -117,6 +116,6 @@ float Etudiant::getNote2()
   return _note2;
 }
 
-float Etudiant::moyenne(){
+float Etudiant::moyenne() const{
   return (_note1+_note2)/2.0;
 }
