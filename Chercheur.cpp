@@ -12,7 +12,7 @@ Chercheur::Chercheur(const Chercheur& aC) : Personne(aC)
  _copy(aC);
 }
 
-Chercheur::Chercheur(char *prenom, char *nom, int annee, string domaine) : Personne(nom, prenom, annee)
+Chercheur::Chercheur(char *nom, char *prenom, int annee, string domaine) : Personne(nom, prenom, annee)
 {
   _domaine = domaine;
 }
