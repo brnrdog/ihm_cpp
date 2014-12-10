@@ -30,7 +30,7 @@ class Chercheur : virtual public Personne
    friend  bool operator!=(const Chercheur& aC1, const Chercheur& aC2);
 
    // Inspecteurs/modificateurs
-   string getDomaine();
+   string getDomaine() const;
    void setDomaine(string domaine);
 
  protected :

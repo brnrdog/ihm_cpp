@@ -46,8 +46,8 @@ int main(){
 
   cout << "\n-- COMPARATIONS\n";
 
-  Personne p1("ARMSTRONG", "dsa", 1990);
-  Personne p2("BORNWOOD", "dsa", 1990);
+  Personne p1("ARMSTRONG", "John", 1990);
+  Personne p2("BORNWOOD", "Mary", 1990);
 
   if(p1 < p2)
   {
@@ -73,7 +73,7 @@ int main(){
 
   cout << "\n-- ENSEIGNANT\n";
 
-  Enseignant ens("OAK", "GARY", 1975, 30, 50);
+  Enseignant ens("OAK", "Gary", 1975, 30, 50);
 
   cout << ens;
 

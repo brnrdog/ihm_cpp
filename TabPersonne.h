@@ -52,6 +52,7 @@ class TabPersonne
  private :
 
   // Attributes
+  int _N;
   Personne *_tab[20];
 
    // Methodes privees d'allocation/desallocation

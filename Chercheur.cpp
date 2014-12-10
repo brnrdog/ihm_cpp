@@ -60,8 +60,7 @@ void Chercheur::display(ostream& os) const
  (void)os; // Pour eviter un warning si pas utilise
 
  Personne::display(os);
- os << _domaine;
- os << "\n";
+ os << "DOMAINE: " << _domaine << endl;
 
  // ### : Affichage des attributs de la classe Chercheur
  // Exemple : os << _at;
@@ -100,7 +99,7 @@ void Chercheur::setDomaine(string domaine)
   _domaine = domaine;
 }
 
-string Chercheur::getDomaine()
+string Chercheur::getDomaine() const
 {
   return _domaine;
 }

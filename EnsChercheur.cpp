@@ -69,7 +69,7 @@ void EnsChercheur::display(ostream& os) const
  (void)os; // Pour eviter un warning si pas utilise
 
  Enseignant::display(os);
- Chercheur::display(os);
+ os << "DOMAINE: " << this->getDomaine() << endl;
 
  // ### : Affichage des attributs de la classe EnsChercheur
  // Exemple : os << _at;

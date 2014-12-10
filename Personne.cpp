@@ -83,12 +83,8 @@ void Personne::display(ostream& os) const
 
  // ### : Affichage des attributs de la classe Personne
  // Exemple : os << _at;
- os << _nom;
- os << "\n";
- os << _prenom;
- os << "\n";
- os << _anneeNaissance;
- os << "\n";
+ os << _nom << " " << _prenom << endl;
+ os << "NAISSANCE: " << _anneeNaissance << endl;
 }
 
 //--

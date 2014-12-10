@@ -4,6 +4,7 @@
 //--
 TabPersonne::TabPersonne( /* ### */ )
 {
+  _N = 0;
 }
 
 //--
@@ -55,15 +56,19 @@ void TabPersonne::display(ostream& os) const
 
  // ### : Affichage des attributs de la classe TabPersonne
  // Exemple : os << _at;
- for (Personne *p : _tab)
+ for (int i = 0; i < _N; ++i)
  {
-   if (p != nullptr) {
-     os << p->getNom();
-     os << " ";
-     os << p->getPrenom();
-     os << "\n";
-   }
+   os << *(_tab[i]) << endl;
  }
+ // for (Personne *p : _tab)
+ // {
+ //   if (p != nullptr) {
+ //     os << p->getNom();
+ //     os << " ";
+ //     os << p->getPrenom();
+ //     os << "\n";
+ //   }
+ // }
 }
 
 //--
@@ -94,12 +99,14 @@ void TabPersonne::_destroy(void)
 
 void TabPersonne::ajouterPersonne(Personne *p)
 {
-  for(int i = 0; i < sizeof(_tab); i++)
-  {
-    if(_tab[i] == nullptr)
-    {
-      _tab[i] = p;
-      break;
-    }
-  }
+  _tab[_N] = p;
+  _N++;
+  // for(int i = 0; i < sizeof(_tab); i++)
+  // {
+  //   if(_tab[i] == nullptr)
+  //   {
+  //     _tab[i] = p;
+  //     break;
+  //   }
+  // }
 }

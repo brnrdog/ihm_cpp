@@ -35,7 +35,7 @@ class Enseignant : virtual public Personne
    int getCM();
    int getTD();
 
-   int getETD();
+   int getETD() const;
 
  protected :
 

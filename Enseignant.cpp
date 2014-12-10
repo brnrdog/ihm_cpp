@@ -71,8 +71,8 @@ void Enseignant::display(ostream& os) const
 
  // ### : Affichage des attributs de la classe Enseignant
  // Exemple : os << _at;
- os << (_cm*1.5 + _td);
- os << "\n";
+ // os << (_cm*1.5 + _td);
+ os << "ETD: " << this->getETD() << endl;
 }
 
 //--
@@ -123,7 +123,7 @@ int Enseignant::getTD()
   return _td;
 }
 
-int Enseignant::getETD()
+int Enseignant::getETD() const
 {
   return (_cm*1.5 + _td);
 }
